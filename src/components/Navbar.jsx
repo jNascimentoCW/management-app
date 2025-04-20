@@ -1,21 +1,20 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav
-      className={`${isOpen ? "absolute bg-black/85" : "absolute md:relative md:bg-black"} h-full w-60 self-start px-6 py-6 text-stone-200 md:h-[85%] md:w-1/4 md:self-end md:rounded-tr-4xl md:px-12 md:py-24`}
+      className={`${isOpen ? "absolute h-full w-60 bg-black/85" : "absolute md:relative md:bg-black"} self-start px-6 py-6 text-stone-200 md:h-[85%] md:w-[20rem] md:self-end md:rounded-tr-4xl md:px-12 md:py-24`}
     >
       <div className="flex items-center justify-start">
         <div className="invisible absolute flex flex-col md:visible">
           <h2 className="py-6 text-xl font-bold uppercase">Your Projects</h2>
-          <button className="cursor-pointer rounded-lg bg-stone-600 p-3 text-stone-400 hover:bg-stone-400 hover:text-stone-900">
-            + Add Projects
-          </button>
+          <Button text="+ Add Projects" isWhite={false} />
         </div>
         <button
-          className="rounded-sm bg-black p-2 text-white focus:outline-none md:hidden"
+          className="cursor-pointer rounded-sm bg-black p-2 text-white focus:outline-none md:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -40,9 +39,7 @@ const Navbar = () => {
         } mt-4 flex flex-col items-start justify-end`}
       >
         <h2 className="text-md py-4 font-bold uppercase">Your Projects</h2>
-        <button className="cursor-pointer rounded-lg bg-stone-600 p-3 text-stone-400 hover:bg-stone-400 hover:text-stone-900">
-          + Add Projects
-        </button>
+        <Button text="+ Add Projects" isWhite={false} />
       </div>
     </nav>
   );
