@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="flex items-center justify-start">
         <div className="invisible absolute flex flex-col md:visible">
           <h2 className="py-6 text-xl font-bold uppercase">Your Projects</h2>
-          <Button text="+ Add Projects" isWhite={false} />
+          <Button text="+ Add Projects" isWhite={false} hasStyleSet="" />
         </div>
         <button
           className="cursor-pointer rounded-sm bg-black p-2 text-white focus:outline-none md:hidden"
@@ -39,7 +39,7 @@ const Navbar = () => {
         } mt-4 flex flex-col items-start justify-end`}
       >
         <h2 className="text-md py-4 font-bold uppercase">Your Projects</h2>
-        <Button text="+ Add Projects" isWhite={false} />
+        <Button text="+ Add Projects" isWhite={false} hasStyleSet="" />
       </div>
     </nav>
   );

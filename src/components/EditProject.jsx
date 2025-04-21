@@ -7,7 +7,7 @@ export default function EditProject({ title, description, date }) {
         <h2 className="pb-4 text-2xl font-bold text-stone-700">
           Learning React
         </h2>
-        <Button text="Delete" isWhite={true} />
+        <Button text="Delete" isWhite="" hasStyleSet="" />
       </div>
       <div className="w-[80%]">
         <p className="pb-6 text-stone-400">Dec 29, 2024</p>
@@ -26,7 +26,7 @@ export default function EditProject({ title, description, date }) {
         {/* <p>This project does not have any tasks yet.</p> */}
         <div className="flex justify-between bg-stone-100 p-2">
           <p className="">practice, practice, practice</p>
-          <Button text="Delete" isWhite={true} style="hover:text-red-500" />
+          <Button text="Delete" isWhite="" hasStyleSet="hover:text-red-500" />
         </div>
       </div>
     </div>

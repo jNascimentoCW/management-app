@@ -19,8 +19,8 @@ function App() {
           Create new project
         </button>
       </div> */}
-      {/* <AddProjects /> */}
-      <EditProject />
+      <AddProjects />
+      {/* <EditProject /> */}
     </div>
   );
 }
