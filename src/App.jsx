@@ -1,4 +1,5 @@
 import AddProjects from "./components/AddProjects";
+import EditProject from "./components/EditProject";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
           Create new project
         </button>
       </div> */}
-      <AddProjects />
+      {/* <AddProjects /> */}
+      <EditProject />
     </div>
   );
 }
