@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "flowbite/src/themes/default";
 
+<<<<<<< HEAD
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 @source "../node_modules/flowbite-datepicker";
@@ -13,4 +14,12 @@
 .datepicker-picker span:hover {
   background-color: var(--color-stone-300) !important;
   color: var(--color-stone-900) !important;
+=======
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.react-datepicker__input-container input {
+  width: 100% !important;
+  outline: none;
+>>>>>>> fixBugs
 }
