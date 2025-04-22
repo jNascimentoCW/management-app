@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function EditProject({ title, description, date }) {
   return (
-    <div className="flex w-full flex-col items-center justify-center px-15 md:w-4/5 md:items-center">
+    <>
       <div className="flex w-[80%] justify-between">
         <h2 className="pb-4 text-2xl font-bold text-stone-700">
           Learning React
@@ -29,6 +29,6 @@ export default function EditProject({ title, description, date }) {
           <Button text="Delete" isWhite="" hasStyleSet="hover:text-red-500" />
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="flex h-screen">
       <Navbar />
-      <MainPage />
-      {/* <AddProjects /> */}
-      {/* <EditProject /> */}
+      <div className="flex w-full flex-col items-center justify-center text-center md:w-3/4">
+        <MainPage />
+        {/* <AddProjects /> */}
+        {/* <EditProject /> */}
+      </div>
     </div>
   );
 }
